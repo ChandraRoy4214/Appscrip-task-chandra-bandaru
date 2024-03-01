@@ -1,0 +1,19 @@
+.filtersContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+  padding: 8px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.line {
+  height: 25px;
+  border-left: 1px solid #e5e5e5;
+}
+
+.recommend {
+  display: flex;
+  align-items: center;
+}

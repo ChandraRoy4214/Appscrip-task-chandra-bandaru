@@ -1,0 +1,16 @@
+.navbarContainer {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.navChild {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 28px;
+  padding-top: 5px;
+}

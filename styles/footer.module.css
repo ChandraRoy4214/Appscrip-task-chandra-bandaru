@@ -1,0 +1,66 @@
+.footerContainer {
+  background-color: #000000;
+  color: white;
+  padding: 5%;
+}
+
+.footerText {
+  margin-top: 20px;
+}
+
+.newsLetter {
+  display: flex;
+  gap: 10px;
+  justify-content: between;
+  margin-top: 20px;
+  min-width: 100%;
+}
+
+.inputBox {
+  height: 50px;
+  width: 75%;
+  padding: '14px 24px';
+  display: block;
+  width: full;
+}
+
+.button {
+  background-color: black;
+  color: gray;
+  padding: 15px;
+  border: 2px gray solid;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: gray;
+  color: white;
+  transition-duration: 300;
+}
+
+.underline {
+  border-bottom: 1.5px solid white;
+  margin: 20px 0px;
+}
+.underline2 {
+  border-bottom: 2px solid white;
+  margin: 20px 0px;
+}
+
+.contactUs {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.accordianClose {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordianInfo {
+  height: 200px;
+  width: 100%;
+}
