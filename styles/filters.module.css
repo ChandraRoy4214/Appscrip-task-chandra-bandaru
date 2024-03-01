@@ -17,3 +17,32 @@
   display: flex;
   align-items: center;
 }
+
+.desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 725px) {
+  .desktop {
+    display: block;
+    min-width: 20%;
+    margin-top: 2em;
+  }
+}
+
+.underline {
+  border-bottom: 1.5px solid #e5e5e5;
+  margin: 20px 0px;
+}
+
+.accordianInfoItem {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 20px;
+}
+
+.checkBox {
+  display: block;
+  width: 20px;
+  height: 20px;
+}

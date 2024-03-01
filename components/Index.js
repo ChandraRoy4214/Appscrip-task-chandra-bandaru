@@ -3,7 +3,8 @@ import AllProducts from './Products/AllProducts';
 import styles from '../styles/index.module.css';
 import Footer from './Footer';
 import Navbar from './Navbar';
-import Filters from './Filters/Index';
+import MobileFilters from './Filters/Mobile';
+import DesktopFilters from './Filters/Desktop';
 
 function Index() {
   return (
@@ -26,9 +27,12 @@ function Index() {
         </p>
       </div>
 
-      <Filters />
+      <MobileFilters />
 
-      <AllProducts />
+      <div className={styles.container}>
+        <DesktopFilters />
+        <AllProducts />
+      </div>
 
       <Footer />
     </div>
