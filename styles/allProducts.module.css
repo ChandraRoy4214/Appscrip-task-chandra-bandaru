@@ -6,7 +6,7 @@
 .productContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 10px;
   min-height: 700px;
 }

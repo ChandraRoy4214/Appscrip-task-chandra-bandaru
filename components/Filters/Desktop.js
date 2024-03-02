@@ -45,10 +45,10 @@ function Desktop() {
 
       {filtersList?.map((item, ind) => {
         return (
-          <>
-            <FilterAccordian ind={ind} title={item} data={filtersData[item]} />
+          <div key={ind}>
+            <FilterAccordian title={item} data={filtersData[item]} />
             <div className={styles.underline}> </div>
-          </>
+          </div>
         );
       })}
     </article>

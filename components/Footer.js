@@ -9,6 +9,7 @@ import gpay from '../public/Images/gpay.png';
 import ipay from '../public/Images/ipay.png';
 import opay from '../public/Images/opay.png';
 import paypal from '../public/Images/paypal.png';
+import usa from '../public/Images/USA.png';
 
 function Footer() {
   return (
@@ -26,7 +27,7 @@ function Footer() {
             <input
               className={styles.inputBox}
               placeholder='Enter your e-mail...'
-              type='text'
+              type='email'
             />
             <button className={styles.button}> SUBSCRIBE </button>
           </div>
@@ -36,8 +37,33 @@ function Footer() {
           <p> +44 221 133 5360 </p>
           <p> customercare@mettamuse.com </p>
 
-          <h2> CURRENCY </h2>
-          <h3> USD </h3>
+          <h2 style={{ marginTop: '10px' }}> CURRENCY </h2>
+          <div className={styles.currency}>
+            <div>
+              <Image
+                alt={'US image'}
+                src={usa}
+                width={'24px'}
+                height={'24px'}
+                unoptimized
+              />
+            </div>
+
+            <div style={{ display: 'flex', gap: '10px' }}>
+              {' '}
+              <p
+                style={{
+                  rotate: '45deg',
+                  marginTop: '2px',
+                  marginLeft: '10px',
+                  fontSize: '12px',
+                }}
+              >
+                <LiaSquareFullSolid />
+              </p>{' '}
+              <h3>USD</h3>
+            </div>
+          </div>
 
           <p style={{ fontSize: '12px' }}>
             Transactions will be completed in Euros and a currency reference is
@@ -67,11 +93,33 @@ function Footer() {
         <div className={styles.underline}> </div>
 
         <div>
-          <h1> CURRENCY </h1>
+          <h1 style={{ margin: '20px 0px' }}> CURRENCY </h1>
 
-          <div className={styles.contactUs}>
-            <p> +44 221 133 5360 </p>
-            <p> USA </p>
+          <div className={styles.currency}>
+            <div>
+              <Image
+                alt={'US image'}
+                src={usa}
+                width={'24px'}
+                height={'24px'}
+                unoptimized
+              />
+            </div>
+
+            <div style={{ display: 'flex', gap: '10px' }}>
+              {' '}
+              <p
+                style={{
+                  rotate: '45deg',
+                  marginTop: '2px',
+                  marginLeft: '10px',
+                  fontSize: '12px',
+                }}
+              >
+                <LiaSquareFullSolid />
+              </p>{' '}
+              <h3>USD</h3>
+            </div>
           </div>
         </div>
 

@@ -24,12 +24,8 @@
   display: none;
 }
 
-@media only screen and (min-width: 725px) {
-  .desktop {
-    display: block;
-    min-width: 20%;
-    margin-top: 2em;
-  }
+.showHide {
+  display: none;
 }
 
 .underline {
@@ -56,6 +52,11 @@
   gap: 5px;
 }
 
+.filterText {
+  min-width: 50%;
+  text-align: center;
+}
+
 .recommendContainer {
   position: relative;
 }
@@ -75,16 +76,53 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  z-index: 99;
 }
 
 .popupItem {
   display: flex;
   gap: 10px;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   cursor: pointer;
 }
 
 .tick {
   margin-bottom: -4px;
+}
+
+.hideFilter {
+  text-decoration: underline;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #888792;
+  cursor: pointer;
+  width: 200px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .desktop {
+    display: block;
+    min-width: 20%;
+    margin-top: 2em;
+  }
+
+  .filterText {
+    display: none;
+  }
+
+  .showHide {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .filtersContainer {
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
 }

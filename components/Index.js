@@ -10,6 +10,7 @@ import DesktopFilters from './Filters/Desktop';
 
 function Index() {
   const [showFavourites, setShowFavourites] = useState(false);
+  const [hideFilters, setHideFilters] = useState(false);
 
   return (
     <div>
@@ -41,10 +42,14 @@ function Index() {
         </p>
       </div>
 
-      <MobileFilters />
+      <MobileFilters
+        hideFilters={hideFilters}
+        setHideFilters={setHideFilters}
+      />
 
       <div className={styles.container}>
-        <DesktopFilters />
+        {!hideFilters && <DesktopFilters />}
+
         <AllProducts showFavourites={showFavourites} />
       </div>
 

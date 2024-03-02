@@ -4,11 +4,11 @@ import styles from '../../styles/footer.module.css';
 import styles2 from '../../styles/filters.module.css';
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 
-const FilterAccordian = ({ title, data, ind }) => {
+const FilterAccordian = ({ title, data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <article key={ind}>
+    <article>
       <div
         className={styles.accordianClose}
         onClick={() => {
