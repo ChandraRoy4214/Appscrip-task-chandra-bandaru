@@ -1,0 +1,17 @@
+.container {
+  /* max-width: 90vw; */
+  margin: 25px auto;
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 700px;
+}
+
+.noFavourites {
+  font-weight: 600;
+  margin-top: 3em;
+}
