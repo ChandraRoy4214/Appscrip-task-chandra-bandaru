@@ -6,7 +6,7 @@ function Mobile({ hideFilters, setHideFilters }) {
   return (
     <div className={styles.filtersContainer}>
       <div className={styles.showHide}>
-        <p> 3425 ITEMS </p>
+        <p> 20 ITEMS </p>
 
         <div
           className={styles.hideFilter}
