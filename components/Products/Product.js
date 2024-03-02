@@ -21,13 +21,7 @@ function Product({ product, favourites, setFavourites, showFavourites }) {
   return (
     <div className={styles.productContainer}>
       <div className={styles.imageContainer}>
-        <Image
-          unoptimized={true}
-          src={image}
-          alt={title}
-          width={168}
-          height={224}
-        />
+        <Image unoptimized={true} src={image} alt={title} fill priority />
       </div>
 
       <div className={styles.productInfo}>

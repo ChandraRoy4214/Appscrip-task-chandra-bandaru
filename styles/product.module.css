@@ -1,13 +1,13 @@
 .productContainer {
-  margin: 16px;
+  margin: 16px auto;
 }
 
 .imageContainer {
   height: 224px;
-  width: 168px;
-  padding: 1px;
-  display: flex;
-  align-items: center;
+  max-width: 168px;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
   margin-bottom: 10px;
 }
 
@@ -30,12 +30,16 @@
   text-decoration: underline;
 }
 
-/* @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 725px) {
+  .imageContainer {
+    height: 300;
+    max-width: 225px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .imageContainer {
     height: 399px;
     max-width: 300px;
-    position: relative;
-    width: 100%;
-    aspect-ratio: 3/4;
   }
-} */
+}
