@@ -1,11 +1,10 @@
 'use client';
-import styles from '../styles/footer.module.css';
-
-import { MdKeyboardArrowDown } from 'react-icons/md';
-
 import { useState } from 'react';
+import styles from '../styles/footer.module.css';
+import { MdKeyboardArrowDown } from 'react-icons/md';
+import { IoLogoInstagram, IoLogoLinkedin } from 'react-icons/io5';
 
-const Accordian = ({ title }) => {
+const Accordian = ({ title, data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -28,7 +27,33 @@ const Accordian = ({ title }) => {
         </p>
       </div>
 
-      {isOpen ? <div className={styles.accordianInfo}></div> : ''}
+      {isOpen ? (
+        <div className={styles.accordianInfo}>
+          {data?.length ? (
+            data?.map((item, ind) => {
+              return <p key={ind}> {item} </p>;
+            })
+          ) : (
+            <div
+              style={{
+                display: 'flex',
+                gap: '10px',
+                marginTop: '10px',
+                fontSize: '20px',
+              }}
+            >
+              <div className={styles.logo}>
+                <IoLogoInstagram />
+              </div>
+              <div className={styles.logo}>
+                <IoLogoLinkedin />
+              </div>
+            </div>
+          )}
+        </div>
+      ) : (
+        ''
+      )}
     </article>
   );
 };

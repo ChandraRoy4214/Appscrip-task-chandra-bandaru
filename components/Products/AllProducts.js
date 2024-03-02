@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Product from './Product';
 import styles from '../../styles/allProducts.module.css';
 
-function AllProducts() {
+function AllProducts({ showFavourites }) {
   const [productsList, setProductsList] = useState([]);
   const [favourites, setFavourites] = useState([]);
 
@@ -24,18 +24,22 @@ function AllProducts() {
     }
   }
 
-  console.log('favourites: ', favourites);
-
   return (
     <div className={styles.container}>
       <div className={styles.productContainer}>
+        {showFavourites && !favourites?.length && (
+          <p className={styles.noFavourites}> No Favourite Items! </p>
+        )}
         {productsList?.map((product) => {
+          if (showFavourites && !favourites.includes(product.id)) return;
+
           return (
             <Product
               key={product.id}
               product={product}
               favourites={favourites}
               setFavourites={setFavourites}
+              showFavourites={showFavourites}
             />
           );
         })}

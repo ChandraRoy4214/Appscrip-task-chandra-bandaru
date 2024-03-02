@@ -46,7 +46,7 @@ function Desktop() {
       {filtersList?.map((item, ind) => {
         return (
           <>
-            <FilterAccordian key={ind} title={item} data={filtersData[item]} />
+            <FilterAccordian ind={ind} title={item} data={filtersData[item]} />
             <div className={styles.underline}> </div>
           </>
         );

@@ -2,29 +2,25 @@
 import { useState } from 'react';
 import styles from '../../styles/footer.module.css';
 import styles2 from '../../styles/filters.module.css';
-import { MdKeyboardArrowDown } from 'react-icons/md';
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
 
-const FilterAccordian = ({ title, data }) => {
+const FilterAccordian = ({ title, data, ind }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <article>
+    <article key={ind}>
       <div
         className={styles.accordianClose}
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}
       >
-        <h4> {title} </h4>
-        <p
-          style={{
-            fontSize: '24px',
-            color: '#292D32',
-            transition: '0.5s ease-out',
-            rotate: isOpen ? '180deg' : '0deg',
-          }}
-        >
-          <MdKeyboardArrowDown />
+        <div className={styles2.filterInfo}>
+          <h4> {title} </h4>
+          <p> All </p>
+        </div>
+        <p className={styles.arrow}>
+          {isOpen ? <MdKeyboardArrowDown /> : <MdKeyboardArrowUp />}
         </p>
       </div>
 

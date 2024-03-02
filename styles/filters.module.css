@@ -16,6 +16,8 @@
 .recommend {
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .desktop {
@@ -45,4 +47,44 @@
   display: block;
   width: 20px;
   height: 20px;
+}
+
+.filterInfo {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.recommendContainer {
+  position: relative;
+}
+
+.recommendPopup {
+  position: absolute;
+  top: 3rem;
+  min-width: 260px;
+  padding: 2rem 0rem;
+  padding-right: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popupItem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.tick {
+  margin-bottom: -4px;
 }

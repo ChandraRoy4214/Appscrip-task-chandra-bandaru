@@ -14,3 +14,19 @@
   font-size: 28px;
   padding-top: 5px;
 }
+
+.logoContainer {
+  width: 24px;
+  height: 24px;
+}
+
+@media only screen and (min-width: 725px) {
+  .navbarContainer {
+    padding: 2%;
+    border-bottom: none;
+  }
+
+  .hamburger {
+    opacity: 0;
+  }
+}

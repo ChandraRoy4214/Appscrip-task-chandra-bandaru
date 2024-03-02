@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../../styles/product.module.css';
 import { MdFavoriteBorder, MdFavorite } from 'react-icons/md';
 
-function Product({ product, favourites, setFavourites }) {
+function Product({ product, favourites, setFavourites, showFavourites }) {
   let { id, image, title } = product;
 
   function manageFavourite(productId) {

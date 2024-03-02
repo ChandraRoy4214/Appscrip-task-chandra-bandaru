@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.mainHeading {
+  font-weight: 400;
+}
+
 .titleContainer {
   display: grid;
   place-items: center;
@@ -16,8 +20,35 @@
   margin: 25px auto;
 }
 
+.navCategories {
+  margin-left: 5vw;
+  margin-top: 20px;
+}
+.desktopNavigation {
+  display: none;
+}
+
 @media only screen and (min-width: 725px) {
   .filtersContainer {
     display: none;
+  }
+  .titleContainer {
+    margin-top: 50px;
+  }
+  .navCategories {
+    display: none;
+  }
+
+  .desktopNavigation {
+    border-bottom: 1px solid #efefef;
+    margin: 20px 0px;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+  }
+  .mainHeading {
+    font-size: 3em;
   }
 }
